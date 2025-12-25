@@ -1,5 +1,5 @@
 # Strobe-Light-Analog-Circuit
-Analog circuit using LEDs with a NE555 to flicker at customizable rates with potentiometers powered by 9V alkaline battery.__
+Analog circuit using LEDs with a NE555 to flicker at customizable rates with potentiometers powered by 9V alkaline battery.<br/><br/>
 Image credits go to CircuitBread https://www.youtube.com/watch?v=iwbGccGU4io
 
 Circuit inspiration credits go to Skosan Electronics https://www.youtube.com/watch?v=euiDv51VVt4 
