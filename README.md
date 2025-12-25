@@ -7,7 +7,7 @@ Circuit inspiration credits go to Skosan Electronics video https://www.youtube.c
 
 I/O table credits go to element14 presents video https://www.youtube.com/watch?v=oZzjmAbyyIQ&t=315s
 
-<img src="https://github.com/user-attachments/assets/918a3fbf-338d-4a15-a2cd-0778598d1b12" width="500" />
+<img width="532" height="1278" alt="image" src="https://github.com/user-attachments/assets/57a52e68-895c-40d6-9b2c-bdc6c7f6e26d" />
 This is the first circuit implementation.
 
 # Theory and decisions behind pinout placements
