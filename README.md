@@ -1,11 +1,11 @@
 # Strobe-Light-Analog-Circuit
 Analog circuit using LEDs with a NE555 to flicker at customizable rates with potentiometers.
 
-Image credits go to CircuitBread's video https://www.youtube.com/watch?v=iwbGccGU4io
+Image credits go to CircuitBread https://www.youtube.com/watch?v=iwbGccGU4io
 
-Circuit inspiration credits go to Skosan Electronics video https://www.youtube.com/watch?v=euiDv51VVt4 
+Circuit inspiration credits go to Skosan Electronics https://www.youtube.com/watch?v=euiDv51VVt4 
 
-I/O table credits go to element14 presents video https://www.youtube.com/watch?v=oZzjmAbyyIQ&t=315s
+I/O table and 555 pinout credits go to element14 presents https://www.youtube.com/watch?v=oZzjmAbyyIQ&t=315s
 
 <img width="300" height="721" alt="image" src="https://github.com/user-attachments/assets/57a52e68-895c-40d6-9b2c-bdc6c7f6e26d" />
 This is the first circuit implementation.
