@@ -18,7 +18,7 @@ Likewise, with some potentiometer values there are cases that result in the LED 
 
 As shown in the picture above, we have trigger (pin 2) and threshold (pin 6) connected to each other directly with a GREEN wire. No resistor is needed since we do not want voltage drop to affect the 2/3Vcc and 1/3Vcc for each comparator in the 555 timer. Next, we have reset (pin 4) and Vcc (pin 8) connected, this is so that the timer can constantly operate without any random resets occuring.
 
-For discharge (pin 7) and Vcc (pin 8) being connected through resistors, this is so that discharge can occur. As such the resistors used here allow for the discharge rate to be altered.
+For discharge (pin 7) and Vcc (pin 8) being connected through resistors, this is so that discharge can occur. As such the resistors used here prevent component damage from overheating, and the potentiometer allows for the discharge rate to be altered.
 
 <img width="800" height="445" alt="image" src="https://github.com/user-attachments/assets/c75aa674-0e2f-431d-9106-f576fbede37c" /><br/>
 The connection of the two allows for the general case shown in the I/O table image, giving the general pulse width on and off functionality for the 555 timer. This is shown in the circuit below as such.
