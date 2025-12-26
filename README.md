@@ -19,7 +19,7 @@ As shown in the picture above, we have trigger (pin 2) and threshold (pin 6) con
 <img width="798" height="422" alt="image" src="https://github.com/user-attachments/assets/1d012e24-c07c-49d2-bd87-19c463be594d" /><br/>
 The connection of the two allows for the general case shown in the I/O table image, giving the general pulse width on and off functionality for the 555 timer. This is shown in the circuit below as such.
 
-<img width="600" height="337" alt="Screenshot 2025-12-25 014243" src="https://github.com/user-attachments/assets/b7137da6-18c2-4a44-85cd-b1db7436b96f" /><br/>
+<img width="600" height="334" alt="image" src="https://github.com/user-attachments/assets/c75aa674-0e2f-431d-9106-f576fbede37c" />
 
 <img width="300" height="721" alt="image" src="https://github.com/user-attachments/assets/dc8b1b64-4159-4cfa-a0ee-1fc3b8950063" />
 
