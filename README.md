@@ -1,8 +1,5 @@
 # Strobe-Light-Analog-Circuit
 Analog circuit using a NE555 IC to flicker LEDs at customizable rates with potentiometers. The entire circuit is powered by a 9V alkaline battery. <br/>
-Image credits go to CircuitBread https://www.youtube.com/watch?v=iwbGccGU4io <br/>
-Circuit inspiration credits go to Skosan Electronics https://www.youtube.com/watch?v=euiDv51VVt4 <br/>
-I/O table and 555 pinout credits go to element14 presents https://www.youtube.com/watch?v=oZzjmAbyyIQ&t=315s <br/>
 
 <img width="300" height="721" alt="image" src="https://github.com/user-attachments/assets/57a52e68-895c-40d6-9b2c-bdc6c7f6e26d" />
 
@@ -25,3 +22,7 @@ The connection of the two allows for the general case shown in the I/O table ima
 
 This is the second circuit implementation. It can be seen that two more potentiometers are added, another 900k potentiometer and a 100k potentiometer. The 2nd 900k potentiometer determines the pulse width of the duty cycle, and can customize how long it stays ON or OFF for each pulse. The 100k potentiometer determinse the period. This will be further updated so that ideally they are all same value potentiometers unless required to be different.
 
+Image theory credits https://www.youtube.com/watch?v=iwbGccGU4io <br/>
+Circuit inspiration credits https://www.youtube.com/watch?v=euiDv51VVt4 <br/>
+I/O table and 555 pinout credits https://www.youtube.com/watch?v=oZzjmAbyyIQ&t=315s <br/>
+Theory calculation credits https://www.youtube.com/watch?v=gTn_HmzXYLo
