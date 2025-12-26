@@ -7,6 +7,8 @@ This is the first circuit implementation. The 900k ohm potentiometer allows for 
 
 We want to modify this, so that ideally it will only be bright on ONE side, and that ideally the potentiometer value be swapped to something smaller (like 100k or 10k).
 
+As for why we chose a 10uF capacitor instead of say a 100uF capacitor is that the higher value the capacitor is, the less sensitive the LED display is, and due to potentiometer values, in some cases results in the LED not lighting up while trying to obtain a very high frequency of blinking.
+
 # Theory and decisions behind pinout placements
 <img width="600" height="279" alt="image" src="https://github.com/user-attachments/assets/9b49348d-215b-4eff-a162-9608d2c26ac6" /><br/>
 As shown in the picture above, we have trigger (pin 2) and threshold (pin 6) connected to each other directly with a GREEN wire. No resistor is needed since we do not want voltage drop to affect the 2/3Vcc and 1/3Vcc for each comparator in the 555 timer. 
