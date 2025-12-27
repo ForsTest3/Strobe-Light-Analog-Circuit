@@ -40,10 +40,10 @@ This is the second circuit implementation. It can be seen that two more potentio
 <img width="669" height="840" alt="image" src="https://github.com/user-attachments/assets/742bb47a-0f4f-4952-a780-7fba1219de35" /><br/>
 In the case where we want more than one LED blinking at the same rate as the original LED, we can set it so that it is in series. If set in parallel, only some LEDs will light up. This is because in parallel, current is distributed, while voltage is the same. So while one voltage drop may activate one LED, it may not activate the others which results in uneven lighting. However, having LEDs in series is simply a temporary solution, as if you stack more than 3 LEDs, the voltage drop across the LEDs starts to result in the lighting becoming too dim.
 
-Image theory credits https://www.youtube.com/watch?v=iwbGccGU4io <br/>
-Circuit inspiration credits https://www.youtube.com/watch?v=euiDv51VVt4 <br/>
-I/O table and 555 pinout credits https://www.youtube.com/watch?v=oZzjmAbyyIQ&t=315s <br/>
+[1] Image theory credits https://www.youtube.com/watch?v=iwbGccGU4io <br/>
+[2] Circuit inspiration credits https://www.youtube.com/watch?v=euiDv51VVt4 <br/>
+[3] I/O table and 555 pinout credits https://www.youtube.com/watch?v=oZzjmAbyyIQ&t=315s <br/>
 
 Theory credits: <br/>
-https://www.youtube.com/watch?v=gTn_HmzXYLo <br/>
-https://www.youtube.com/watch?v=OsQObXu4TSA&t=147s <br/>
+[4] https://www.youtube.com/watch?v=gTn_HmzXYLo <br/>
+[5] https://www.youtube.com/watch?v=OsQObXu4TSA&t=147s <br/>
