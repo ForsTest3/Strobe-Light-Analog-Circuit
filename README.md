@@ -37,9 +37,8 @@ The connection of the two allows for the general case shown in the I/O table ima
 
 This is the second circuit implementation. It can be seen that two more potentiometers are added, another 900k potentiometer and a 100k potentiometer. The 2nd 900k potentiometer determines the pulse width of the duty cycle, and can customize how long it stays ON or OFF for each pulse. The 100k potentiometer determinse the period. This will be further updated so that ideally they are all same value potentiometers unless required to be different.
 
-<img width="669" height="840" alt="image" src="https://github.com/user-attachments/assets/3d42dc24-dbd5-48c6-93fb-0483ce766c90" /><br/>
+<img width="669" height="840" alt="image" src="https://github.com/user-attachments/assets/742bb47a-0f4f-4952-a780-7fba1219de35" /><br/>
 In the case where we want more than one LED blinking at the same rate as the original LED, we can set it so that it is in series. If set in parallel, only the LED closer to the potentiometer will light up. 
-
 
 Image theory credits https://www.youtube.com/watch?v=iwbGccGU4io <br/>
 Circuit inspiration credits https://www.youtube.com/watch?v=euiDv51VVt4 <br/>
