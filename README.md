@@ -1,5 +1,5 @@
 # Strobe-Light-Analog-Circuit
-Analog circuit using a NE555 IC to flicker LEDs at customizable rates with potentiometers. The entire circuit is powered by a 9V alkaline battery. <br/>
+Analog circuit using a NE555 IC in astable configuration to flicker LEDs at customizable rates with potentiometers. The entire circuit is powered by a 9V alkaline battery. <br/>
 #going to add multisim files
 
 <img width="300" height="721" alt="image" src="https://github.com/user-attachments/assets/57a52e68-895c-40d6-9b2c-bdc6c7f6e26d" />
