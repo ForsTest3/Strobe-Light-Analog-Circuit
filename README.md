@@ -3,11 +3,9 @@ Analog circuit using a NE555 IC to flicker LEDs at customizable rates with poten
 
 <img width="300" height="721" alt="image" src="https://github.com/user-attachments/assets/57a52e68-895c-40d6-9b2c-bdc6c7f6e26d" />
 
-This is the first circuit implementation. The 900k ohm potentiometer allows for the brightness of the LED to be adjusted. It is made in such a way that when it is turned close to either end, the brightness is close to maximum, and when the potentiometer is turned close to center, the LED get's dim or doesn't show any light at all.
+This is the first circuit implementation. The 900k ohm potentiometer allows for the brightness of the LED to be adjusted. It is made in such a way that when it is turned close to either end, the brightness is close to maximum, and when the potentiometer is turned close to center, the LED dims down. However, we want to modify this so that ideally it will only be bright on ONE side. So we will attempt this in the second implementation.
 
-We want to modify this, so that ideally it will only be bright on ONE side, and that ideally the potentiometer value be swapped to something smaller (like 100k or 10k).
-
-As for why we chose a 10uF capacitor instead of say a 100uF capacitor, it is because the higher the value the capacitor is, the less sensitive the LED display is. This is because the capacitor charge and discharge will take longer as it can now store more. Due to the voltage change being smaller as Vcc is constant, having it store 1/3Vcc and 2/3Vcc will take longer for the larger value capacitor. 
+As for why we chose a 10uF capacitor instead of say a 100uF capacitor, it is because the higher the value the capacitor is, the less sensitive the LED display is. This is because the capacitor charge and discharge will take longer as it can now store more. Due to the voltage change being smaller as Vcc is constant, having it store to 1/3Vcc and 2/3Vcc will take longer for the larger value capacitor. 
 
 Now, one may wonder whether a 1uF capacitor could be used, and in this case it definitely could. However, the potentiometer values would require adjusting, as a 1uF capacitor would be much too sensitive.
 
