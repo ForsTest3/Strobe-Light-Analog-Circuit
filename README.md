@@ -44,6 +44,6 @@ Image theory credits https://www.youtube.com/watch?v=iwbGccGU4io <br/>
 Circuit inspiration credits https://www.youtube.com/watch?v=euiDv51VVt4 <br/>
 I/O table and 555 pinout credits https://www.youtube.com/watch?v=oZzjmAbyyIQ&t=315s <br/>
 
-Theory credits:
+Theory credits: <br/>
 https://www.youtube.com/watch?v=gTn_HmzXYLo <br/>
 https://www.youtube.com/watch?v=OsQObXu4TSA&t=147s <br/>
