@@ -43,4 +43,7 @@ In the case where we want more than one LED blinking at the same rate as the ori
 Image theory credits https://www.youtube.com/watch?v=iwbGccGU4io <br/>
 Circuit inspiration credits https://www.youtube.com/watch?v=euiDv51VVt4 <br/>
 I/O table and 555 pinout credits https://www.youtube.com/watch?v=oZzjmAbyyIQ&t=315s <br/>
-Theory calculation credits https://www.youtube.com/watch?v=gTn_HmzXYLo
+
+Theory credits:
+https://www.youtube.com/watch?v=gTn_HmzXYLo
+https://www.youtube.com/watch?v=OsQObXu4TSA&t=147s
