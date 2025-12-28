@@ -44,8 +44,9 @@ In the case where we want more than one LED blinking at the same rate as the ori
 [2] https://www.youtube.com/watch?v=APghHcA-MOI <br/>
 [3] Circuit inspiration credits https://www.youtube.com/watch?v=euiDv51VVt4 <br/>
 [4] I/O table and 555 pinout credits https://www.youtube.com/watch?v=oZzjmAbyyIQ&t=315s <br/>
+[5] Logic Gates https://www.youtube.com/watch?v=sTu3LwpF6XI <br/>
 
 Theory credits: <br/>
-[5] https://www.youtube.com/watch?v=gTn_HmzXYLo <br/>
-[6] https://www.youtube.com/watch?v=OsQObXu4TSA&t=147s <br/>
-https://www.youtube.com/watch?v=sTu3LwpF6XI
+[A] https://www.youtube.com/watch?v=gTn_HmzXYLo <br/>
+[B] https://www.youtube.com/watch?v=OsQObXu4TSA&t=147s <br/>
+
