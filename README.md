@@ -40,6 +40,12 @@ This is the second circuit implementation. It can be seen that two more potentio
 <img width="669" height="840" alt="image" src="https://github.com/user-attachments/assets/742bb47a-0f4f-4952-a780-7fba1219de35" /><br/>
 In the case where we want more than one LED blinking at the same rate as the original LED, we can set it so that it is in series. If set in parallel, only some LEDs will light up. This is because in parallel, current is distributed, while voltage is the same. So while one voltage drop may activate one LED, it may not activate the others which results in uneven lighting. However, having LEDs in series is simply a temporary solution, as if you stack more than 3 LEDs, the voltage drop across the LEDs starts to result in the lighting becoming too dim.
 
+![IMG_3261](https://github.com/user-attachments/assets/b489ccf2-dd0e-4c49-8bea-d6fe16edfb81)
+As such, you can get them to alternate in this configuration, however the brightness is not easily adjustable.
+
+![IMG_3264](https://github.com/user-attachments/assets/cb1ab372-8628-4bf7-962c-544e2e20f7f0)
+By adding a potentiometer, this instead makes it such that
+
 [1] Image theory credits https://www.youtube.com/watch?v=iwbGccGU4io <br/>
 [2] https://www.youtube.com/watch?v=APghHcA-MOI <br/>
 [3] Circuit inspiration credits https://www.youtube.com/watch?v=euiDv51VVt4 <br/>
