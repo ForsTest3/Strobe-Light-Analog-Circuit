@@ -55,4 +55,4 @@ By adding a potentiometer, this instead makes it such that
 Theory credits: <br/>
 [A] https://www.youtube.com/watch?v=gTn_HmzXYLo <br/>
 [B] https://www.youtube.com/watch?v=OsQObXu4TSA&t=147s <br/>
-
+[C] https://www.youtube.com/watch?v=sWbSeJmUFfw
