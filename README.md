@@ -54,15 +54,17 @@ In this configuration, this results in the red LED allowing change in brightness
 <img width="400" height="622" alt="image" src="https://github.com/user-attachments/assets/eb8ca181-2995-411b-aaa0-a47e8cea53bc" /><br/>
 To verify correctly, we also test with matching LEDs for each respective port. Through this we are able to have it so that one of the LEDs blink and decay with adjustable brightness, while the other LED blinks as pulses, and stays the same brightness. <br/>
 
-<img width="500" height="856" alt="image" src="https://github.com/user-attachments/assets/8933eb68-487c-4d93-a666-a4dc7716e1fe" /><br/>
+<img width="500" height="856" alt="image" src="https://github.com/user-attachments/assets/96c2ec1c-a54b-4fc8-9876-22c223f607d7" /><br/>
+Here we obtain a circuit that allows for both LEDs to be modified in brightness, while also having alternating blinking patterns. However, the top potentiometer can dim the top red LED but only a bit, while the bottom potentiometer can dim both of the LEDs, dimming the top LED first and then the bottom LED. This is mainly due to more current entering the BJT emitter, so that it can come out the collector when the base takes enough input. As a result, the bottom LED stays powered on longer than the top LED despite it requiring current into the base from the output of the 555 timer.
 
-[1] Image theory credits https://www.youtube.com/watch?v=iwbGccGU4io <br/>
+# References
+[1] Image theory https://www.youtube.com/watch?v=iwbGccGU4io <br/>
 [2] https://www.youtube.com/watch?v=APghHcA-MOI <br/>
-[3] Circuit inspiration credits https://www.youtube.com/watch?v=euiDv51VVt4 <br/>
-[4] I/O table and 555 pinout credits https://www.youtube.com/watch?v=oZzjmAbyyIQ&t=315s <br/>
+[3] Circuit inspiration https://www.youtube.com/watch?v=euiDv51VVt4 <br/>
+[4] I/O table and 555 pinout https://www.youtube.com/watch?v=oZzjmAbyyIQ&t=315s <br/>
 [5] Logic Gates https://www.youtube.com/watch?v=sTu3LwpF6XI <br/>
 
-Theory credits: <br/>
+Theory: <br/>
 [A] Math equations https://www.youtube.com/watch?v=gTn_HmzXYLo <br/>
 [B] https://www.youtube.com/watch?v=OsQObXu4TSA&t=147s <br/>
 [C] https://www.youtube.com/watch?v=sWbSeJmUFfw
