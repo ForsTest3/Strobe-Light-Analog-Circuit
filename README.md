@@ -7,12 +7,12 @@ This is the first circuit implementation. The 900k ohm potentiometer allows for 
 
 As for why we chose a 10uF capacitor instead of say a 100uF capacitor, it is because the higher the value the capacitor is, the less sensitive the LED display is. This is because the capacitor charge and discharge will take longer as it can now store more. Due to the voltage change being smaller as Vcc is constant, having it store to 1/3Vcc and 2/3Vcc will take longer for the larger value capacitor. 
 
+<img width="600" height="279" alt="image" src="https://github.com/user-attachments/assets/9b49348d-215b-4eff-a162-9608d2c26ac6" /> <br/>
 Now, one may wonder whether a 1uF capacitor could be used, and in this case it definitely could. However, the potentiometer values would require adjusting, as a 1uF capacitor would be much too sensitive. 
 
 Likewise, with some potentiometer values there are cases that result in the LED not lighting up while trying to obtain a very high frequency of blinking.
 
 # Theory and decisions behind pinout placements
-<img width="600" height="279" alt="image" src="https://github.com/user-attachments/assets/9b49348d-215b-4eff-a162-9608d2c26ac6" /> <br/>
 <img width="1636" height="900" alt="image" src="https://github.com/user-attachments/assets/a9f3fd03-95f2-4187-9d05-816f2ea36fed" /> [2] <br/>
 
 As shown in the picture above, we have trigger (pin 2) and threshold (pin 6) connected to each other directly with a GREEN wire. No resistor is needed since we do not want voltage drop to affect the 2/3Vcc and 1/3Vcc for each comparator in the 555 timer. Next, we have reset (pin 4) and Vcc (pin 8) connected, this is so that the timer can constantly operate without any random resets occuring.
