@@ -1,8 +1,7 @@
 # Strobe-Light-Analog-Circuit
 Analog circuit using a NE555 IC in astable configuration to flicker LEDs at customizable rates with potentiometers. The entire circuit is powered by a 9V alkaline battery. <br/>
-#going to add multisim files
 
-<img width="300" height="721" alt="image" src="https://github.com/user-attachments/assets/57a52e68-895c-40d6-9b2c-bdc6c7f6e26d" /> Figure 1. <br/>
+<img width="300" height="721" alt="image" src="https://github.com/user-attachments/assets/57a52e68-895c-40d6-9b2c-bdc6c7f6e26d" /> Figure 1 <br/>
 
 This is the first circuit implementation. The 900k ohm potentiometer allows for the brightness of the LED to be adjusted. It is made in such a way that when it is turned close to either end, the brightness is close to maximum, and when the potentiometer is turned close to center, the LED dims down. However, we want to modify this so that ideally it will only be bright on ONE side. So we will attempt this in the second implementation.
 
@@ -13,7 +12,7 @@ Now, one may wonder whether a 1uF capacitor could be used, and in this case it d
 Likewise, with some potentiometer values there are cases that result in the LED not lighting up while trying to obtain a very high frequency of blinking.
 
 # Theory and decisions behind pinout placements
-<img width="600" height="279" alt="image" src="https://github.com/user-attachments/assets/9b49348d-215b-4eff-a162-9608d2c26ac6" /><br/>
+<img width="600" height="279" alt="image" src="https://github.com/user-attachments/assets/9b49348d-215b-4eff-a162-9608d2c26ac6" /> <br/>
 <img width="1636" height="900" alt="image" src="https://github.com/user-attachments/assets/a9f3fd03-95f2-4187-9d05-816f2ea36fed" /> [2] <br/>
 
 As shown in the picture above, we have trigger (pin 2) and threshold (pin 6) connected to each other directly with a GREEN wire. No resistor is needed since we do not want voltage drop to affect the 2/3Vcc and 1/3Vcc for each comparator in the 555 timer. Next, we have reset (pin 4) and Vcc (pin 8) connected, this is so that the timer can constantly operate without any random resets occuring.
@@ -32,10 +31,10 @@ The connection of the two allows for the general case shown in the I/O table ima
 
 <img width="300" height="721" alt="image" src="https://github.com/user-attachments/assets/dc8b1b64-4159-4cfa-a0ee-1fc3b8950063" /><br/>
 
-
+# Second Circuit Implementation
 <img src="https://github.com/user-attachments/assets/c97514b8-139f-48ea-9cce-27dd3798662c" width="500" /><br/>
 
-This is the second circuit implementation. It can be seen that two more potentiometers are added, another 900k potentiometer and a 100k potentiometer. The 2nd 900k potentiometer determines the pulse width of the duty cycle, and can customize how long it stays ON or OFF for each pulse. The 100k potentiometer determinse the period. This will be further updated so that ideally they are all same value potentiometers unless required to be different.
+Ttwo more potentiometers are added, another 900k potentiometer and a 100k potentiometer. The 2nd 900k potentiometer determines the pulse width of the duty cycle, and can customize how long it stays ON or OFF for each pulse. The 100k potentiometer determinse the period. This will be further updated so that ideally they are all same value potentiometers unless required to be different.
 
 <img width="669" height="840" alt="image" src="https://github.com/user-attachments/assets/742bb47a-0f4f-4952-a780-7fba1219de35" /><br/>
 In the case where we want more than one LED blinking at the same rate as the original LED, we can set it so that it is in series. If set in parallel, only some LEDs will light up. This is because in parallel, current is distributed, while voltage is the same. So while one voltage drop may activate one LED, it may not activate the others which results in uneven lighting. However, having LEDs in series is simply a temporary solution, as if you stack more than 3 LEDs, the voltage drop across the LEDs starts to result in the lighting becoming too dim.
@@ -45,9 +44,11 @@ As such, you can get them to alternate in this configuration, however the bright
 
 One other aspect taken into consideration is whether a non-polarity capacitor could be used. In terms of having a circuit that works, yes it could be used, but it will not achieve the blinking capability that the polarity capacitor can do. As a result, it will simply show the two LEDs as on, and the potentiometer connected pin 7 and pin 8 will work as a mode slider, making it that either one LED will be brighter or the other LED will be brighter.
 
+# Third Circuit Implementation
 ![IMG_3264](https://github.com/user-attachments/assets/cb1ab372-8628-4bf7-962c-544e2e20f7f0)
 By adding a potentiometer, this instead makes it such that
 
+# Fourth Circuit Implementation
 <img width="600" height="934" alt="image" src="https://github.com/user-attachments/assets/2bb101a4-a18c-4835-9917-ff5a3177059e" /><br/>
 In this configuration, this results in the red LED allowing change in brightness with the bottom right 100k potentiometer, meanwhile maintaining the brightness of the green LED closest to the BJT.
 
