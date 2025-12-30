@@ -5,7 +5,7 @@ Analog circuit using a NE555 IC in astable configuration to flicker LEDs at cust
 
 This is the first circuit implementation. The 900k ohm potentiometer allows for the brightness of the LED to be adjusted. It is made in such a way that when it is turned close to either end, the brightness is close to maximum, and when the potentiometer is turned close to center, the LED dims down. However, we want to modify this so that ideally it will only be bright on ONE side. To implement this in further circuits, we can try uisng a diode.
 
-As for why we selected a 10µF capacitor instead of a 100uF capacitor, larger capacitance values introduce excessive filtering that dampens the responsiveness of the LED to potentiometer adjustments. This is because the capacitor charge and discharge will take longer as it can now store more. Due to the voltage change being smaller as Vcc is constant, having it store to 1/3Vcc or 2/3Vcc will take longer for the larger value capacitor. 
+A 10µF capacitor was used instead of a 100uF capacitor, because larger capacitance values introduce excessive filtering that dampens the responsiveness of the LED to potentiometer adjustments. This is because the capacitor charge and discharge will take longer as it can now store more. Due to the voltage change being smaller as Vcc is constant, having it store to 1/3Vcc or 2/3Vcc will take longer for the larger value capacitor. 
 <img width="300" height="721" alt="image" src="https://github.com/user-attachments/assets/dc8b1b64-4159-4cfa-a0ee-1fc3b8950063" /> Figure 2 <br/>
 Now, one may wonder whether a 1uF capacitor could be used, and in this case it definitely could. However, the potentiometer values would require adjusting, as a 1uF capacitor would be much too sensitive. 
 
