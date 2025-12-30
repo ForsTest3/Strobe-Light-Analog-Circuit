@@ -8,7 +8,7 @@ This is the first circuit implementation. The 900k ohm potentiometer allows for 
 
 As for why we chose a 10uF capacitor instead of say a 100uF capacitor, it is because the higher the value the capacitor is, the less sensitive the LED display is. This is because the capacitor charge and discharge will take longer as it can now store more. Due to the voltage change being smaller as Vcc is constant, having it store to 1/3Vcc and 2/3Vcc will take longer for the larger value capacitor. 
 
-Now, one may wonder whether a 1uF capacitor could be used, and in this case it definitely could. However, the potentiometer values would require adjusting, as a 1uF capacitor would be much too sensitive.
+Now, one may wonder whether a 1uF capacitor could be used, and in this case it definitely could. However, the potentiometer values would require adjusting, as a 1uF capacitor would be much too sensitive. 
 
 Likewise, with some potentiometer values there are cases that result in the LED not lighting up while trying to obtain a very high frequency of blinking.
 
@@ -42,6 +42,8 @@ In the case where we want more than one LED blinking at the same rate as the ori
 
 ![IMG_3261](https://github.com/user-attachments/assets/b489ccf2-dd0e-4c49-8bea-d6fe16edfb81)
 As such, you can get them to alternate in this configuration, however the brightness is not easily adjustable. This is due to voltage limitations, and that in adjusting the brightness of the first LED, it will also adjust the brightness of the 2nd LED as a result.
+
+One other aspect taken into consideration is whether a non-polarity capacitor could be used. In terms of having a circuit that works, yes it could be used, but it will not achieve the blinking capability that the polarity capacitor can do. As a result, it will simply show the two LEDs as on, and the potentiometer connected pin 7 and pin 8 will work as a mode slider, making it that either one LED will be brighter or the other LED will be brighter.
 
 ![IMG_3264](https://github.com/user-attachments/assets/cb1ab372-8628-4bf7-962c-544e2e20f7f0)
 By adding a potentiometer, this instead makes it such that
