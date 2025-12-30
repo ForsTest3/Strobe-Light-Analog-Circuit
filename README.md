@@ -48,7 +48,7 @@ One other aspect taken into consideration is whether a non-polarity capacitor co
 ![IMG_3264](https://github.com/user-attachments/assets/cb1ab372-8628-4bf7-962c-544e2e20f7f0)
 By adding a potentiometer, this instead makes it such that
 
-<img width="669" height="840" alt="image" src="https://github.com/user-attachments/assets/2bb101a4-a18c-4835-9917-ff5a3177059e" /><br/>
+<img width="400" height="622" alt="image" src="https://github.com/user-attachments/assets/2bb101a4-a18c-4835-9917-ff5a3177059e" /><br/>
 In this configuration, this results in the red LED allowing change in brightness with the bottom right 100k potentiometer, meanwhile maintaining the brightness of the green LED closest to the BJT.
 
 [1] Image theory credits https://www.youtube.com/watch?v=iwbGccGU4io <br/>
