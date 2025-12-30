@@ -51,8 +51,8 @@ By adding a potentiometer, this instead makes it such that
 <img width="600" height="934" alt="image" src="https://github.com/user-attachments/assets/2bb101a4-a18c-4835-9917-ff5a3177059e" /><br/>
 In this configuration, this results in the red LED allowing change in brightness with the bottom right 100k potentiometer, meanwhile maintaining the brightness of the green LED closest to the BJT.
 
-![IMG_3267](https://github.com/user-attachments/assets/0b460f7d-5890-4967-87c1-494e7c09b61a)
-To verify correctly, we also test with matching LEDs for each respective port. Through this we are able to have it so that one of the LEDs blink and decay with adjustable brightness, while the other LED blinks as pulses, and stays the same brightness.
+<img width="400" height="622" alt="image" src="https://github.com/user-attachments/assets/eb8ca181-2995-411b-aaa0-a47e8cea53bc" /><br/>
+To verify correctly, we also test with matching LEDs for each respective port. Through this we are able to have it so that one of the LEDs blink and decay with adjustable brightness, while the other LED blinks as pulses, and stays the same brightness. <br/>
 
 [1] Image theory credits https://www.youtube.com/watch?v=iwbGccGU4io <br/>
 [2] https://www.youtube.com/watch?v=APghHcA-MOI <br/>
