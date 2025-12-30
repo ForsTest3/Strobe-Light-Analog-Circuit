@@ -54,7 +54,7 @@ In this configuration, this results in the red LED allowing change in brightness
 <img width="400" height="622" alt="image" src="https://github.com/user-attachments/assets/eb8ca181-2995-411b-aaa0-a47e8cea53bc" /><br/>
 To verify correctly, we also test with matching LEDs for each respective port. Through this we are able to have it so that one of the LEDs blink and decay with adjustable brightness, while the other LED blinks as pulses, and stays the same brightness. <br/>
 
-<img width="500" height="836" alt="image" src="https://github.com/user-attachments/assets/f6508251-e03d-4216-b3d1-03271e7bee7e" /><br/>
+<img width="500" height="856" alt="image" src="https://github.com/user-attachments/assets/8933eb68-487c-4d93-a666-a4dc7716e1fe" /><br/>
 
 [1] Image theory credits https://www.youtube.com/watch?v=iwbGccGU4io <br/>
 [2] https://www.youtube.com/watch?v=APghHcA-MOI <br/>
