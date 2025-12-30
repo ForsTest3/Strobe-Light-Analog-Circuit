@@ -13,12 +13,12 @@ Likewise, with some potentiometer values there are cases that result in the LED 
 
 # Theory and decisions behind pinout placements
 <img width="600" height="279" alt="image" src="https://github.com/user-attachments/assets/9b49348d-215b-4eff-a162-9608d2c26ac6" /> [4] NE555 Timer Pinout Diagram <br/>
+As shown in the picture above, we have trigger (pin 2) and threshold (pin 6) connected to each other directly with a GREEN wire. No resistor is needed since we do not want voltage drop to affect the 2/3Vcc and 1/3Vcc for each comparator in the 555 timer. Next, we have reset (pin 4) and Vcc (pin 8) connected, this is so that the timer can constantly operate without any random resets occuring. For discharge (pin 7) and Vcc (pin 8) being connected through resistors, this is so that discharge can occur when the base is given enough voltage in the BJT. As such the resistors used here prevent component damage from overheating, and the potentiometer allows for the duty cycle and frequency to be altered. (As shown in the 555 timer image). <br/>
+ 
 <img width="727" height="400" alt="image" src="https://github.com/user-attachments/assets/a9f3fd03-95f2-4187-9d05-816f2ea36fed" /> [2] Exterior Configuration for Astable <br/>
 <img width="800" height="445" alt="image" src="https://github.com/user-attachments/assets/c75aa674-0e2f-431d-9106-f576fbede37c" /> [4] NE555 interior BJT orientation <br/>
 
-As shown in the picture above, we have trigger (pin 2) and threshold (pin 6) connected to each other directly with a GREEN wire. No resistor is needed since we do not want voltage drop to affect the 2/3Vcc and 1/3Vcc for each comparator in the 555 timer. Next, we have reset (pin 4) and Vcc (pin 8) connected, this is so that the timer can constantly operate without any random resets occuring.
 
-For discharge (pin 7) and Vcc (pin 8) being connected through resistors, this is so that discharge can occur when the base is given enough voltage in the BJT. As such the resistors used here prevent component damage from overheating, and the potentiometer allows for the duty cycle and frequency to be altered. (As shown in the 555 timer image).
 
 As for the connection between threshold (pint 6) and discharge (pin 7), this allows for primarily changing the period (duty cycle changes a bit too but its very small in comparison to period change). This is because threshold is a comparator input, so when we have it connected to discharge, threshold input goes through the flip-flop and then triggers the base of the BJT once there's enough voltage, and this allows for the direct relationship between input and discharge, hence determining the period.
 The connection of the two allows for the general case shown in the I/O table image, giving the general pulse width on and off functionality for the 555 timer. This is shown in the circuit below as such.
