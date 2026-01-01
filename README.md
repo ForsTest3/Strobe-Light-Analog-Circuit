@@ -68,3 +68,4 @@ Theory: <br/>
 [A] Math equations https://www.youtube.com/watch?v=gTn_HmzXYLo <br/>
 [B] https://www.youtube.com/watch?v=OsQObXu4TSA&t=147s <br/>
 [C] https://www.youtube.com/watch?v=sWbSeJmUFfw
+[D] https://www.youtube.com/watch?v=EhMk6DUbbPk&t=332s
