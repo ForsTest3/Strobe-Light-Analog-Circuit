@@ -22,7 +22,7 @@ For discharge (pin 7) and Vcc (pin 8) being connected through a resistor, this i
 <img width="727" height="400" alt="image" src="https://github.com/user-attachments/assets/a9f3fd03-95f2-4187-9d05-816f2ea36fed" /> [2] <br/> 
 Exterior Configuration for Astable <br/>
 
-<img width="800" height="445" alt="image" src="https://github.com/user-attachments/assets/c75aa674-0e2f-431d-9106-f576fbede37c" /> [4] NE555 interior BJT orientation <br/>
+<img width="800" height="445" alt="image" src="https://github.com/user-attachments/assets/c75aa674-0e2f-431d-9106-f576fbede37c" /> [4] NE555 interior BJT orientations <br/>
 
 By connecting threshold (pin 6) and trigger (pin 2) together to a polarity capacitor, while connecting the discharge pin (pin 7) to this node through a resistor, the 555 timer operates in its astable configuration. In this setup, the capacitor voltage repeatedly charges and discharges between 1/3VCC and 2/3VCC. When the capacitor voltage crosses these comparator thresholds, the internal comparators toggle the SR flip-flop, which in turn controls the discharge BJT at pin 7.
 
@@ -34,21 +34,17 @@ This switching action causes continuous oscillation, producing a periodic output
 # Second Circuit Implementation
 <img src="https://github.com/user-attachments/assets/c97514b8-139f-48ea-9cce-27dd3798662c" width="500" /><br/>
 
-Ttwo more potentiometers are added, another 900k potentiometer and a 100k potentiometer. The 2nd 900k potentiometer determines the pulse width of the duty cycle, and can customize how long it stays ON or OFF for each pulse. The 100k potentiometer determinse the period. This will be further updated so that ideally they are all same value potentiometers unless required to be different.
+Two additional potentiometers are added: a second 900k ohm and a 100k ohm. The second 900k ohm potentiometer independently adjusts the pulse width (the ON and OFF times within each cycle), while the 100k ohm potentiometer sets the overall period (the total time of one full cycle). In future revisions, these potentiometers will be standardized to the same resistance value unless a specific design requirement dictates otherwise.
 
 <img width="669" height="840" alt="image" src="https://github.com/user-attachments/assets/742bb47a-0f4f-4952-a780-7fba1219de35" /><br/>
-In the case where we want more than one LED blinking at the same rate as the original LED, we can set it so that it is in series. If set in parallel, only some LEDs will light up. This is because in parallel, current is distributed, while voltage is the same. So while one voltage drop may activate one LED, it may not activate the others which results in uneven lighting. However, having LEDs in series is simply a temporary solution, as if you stack more than 3 LEDs, the voltage drop across the LEDs starts to result in the lighting becoming too dim.
+To synchronize multiple LEDs to blink at the same rate as the original, it is more ideal for them to be in series rather than in parallel. A parallel configuration divides the available current, which often leads to inconsistent brightness or some LEDs failing to illuminate. Whereas a series configuration has all the LEDs at similar brightness. However, a series connection is only a temporary solution, as stacking more than three LEDs in series will produce a combined forward voltage that significantly dims them.
 
 ![IMG_3261](https://github.com/user-attachments/assets/b489ccf2-dd0e-4c49-8bea-d6fe16edfb81)
-As such, you can get them to alternate in this configuration, however the brightness is not easily adjustable. This is due to voltage limitations, and that in adjusting the brightness of the first LED, it will also adjust the brightness of the 2nd LED as a result.
+An alternating blink pattern can be achieved by connecting one LED to the output (pin 3) and a second LED to the BJT’s collector. However, this configuration presents a limitation: adjusting the brightness of one LED inherently affects the brightness of the other, and overall brightness control is constrained by the available supply voltage. A simplified digital circuit of this image is shown in the StrobeLightAnalogCircuit2.ms14 file.
 
-One other aspect taken into consideration is whether a non-polarity capacitor could be used. In terms of having a circuit that works, yes it could be used, but it will not achieve the blinking capability that the polarity capacitor can do. As a result, it will simply show the two LEDs as on, and the potentiometer connected pin 7 and pin 8 will work as a mode slider, making it that either one LED will be brighter or the other LED will be brighter.
+One other aspect taken into consideration is whether a non-polarity capacitor with resistor could be used for delay. In terms of having a circuit that works, yes it could be used, but it will not achieve the blinking capability that the polarity capacitor can do. As a result, it will simply show one of the LEDS slowly increasing in brightness overtime and then dim down, while the other continues to blink as usual. 
 
 # Third Circuit Implementation
-![IMG_3264](https://github.com/user-attachments/assets/cb1ab372-8628-4bf7-962c-544e2e20f7f0)
-By adding a potentiometer, this instead makes it such that
-
-# Fourth Circuit Implementation
 <img width="600" height="934" alt="image" src="https://github.com/user-attachments/assets/2bb101a4-a18c-4835-9917-ff5a3177059e" /><br/>
 In this configuration, this results in the red LED allowing change in brightness with the bottom right 100k potentiometer, meanwhile maintaining the brightness of the green LED closest to the BJT.
 
