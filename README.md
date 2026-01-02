@@ -3,10 +3,10 @@ Analog circuit using a NE555 IC in astable configuration to flicker LEDs at cust
 
 <img width="300" height="721" alt="image" src="https://github.com/user-attachments/assets/57a52e68-895c-40d6-9b2c-bdc6c7f6e26d" /> Figure 1 <br/>
 
-## Strobe Brightness Adjuster (first circuit implementation
-This is the first circuit implementation. The 900k ohm potentiometer allows for the brightness of the LED to be adjusted. It is made in such a way that when it is turned close to either end, the brightness is close to maximum, and when the potentiometer is turned close to center, the LED dims down. However, we want to modify this so that ideally it will only be bright on ONE side. To implement this in further circuits, we can try using a diode.
+## Strobe Brightness Adjuster (First circuit implementation)
+The 900 kΩ potentiometer currently adjusts the LED brightness so that it approaches maximum at both ends of the rotation and dims near the center. To modify this behavior so that brightness is high on only one side of the potentiometer range, we can introduce a diode into the circuit to block current in one direction and create the desired asymmetric response.
 
-A 10µF capacitor was selected over a 100µF alternative to allow responsive LED brightness control. As larger capacitance values increase the RC time constant, it slowis the capacitor's charge and discharge rates. Since the 555 timer's trigger thresholds (1/3Vcc and 2/3Vcc) are fixed, a larger capacitor takes significantly longer to reach these voltages. This excessive filtering would make the LED's brightness changes feel sluggish and less precise when adjusting the potentiometer.<br/>
+A 10µF capacitor was selected over a 100µF alternative to allow responsive LED brightness control. As larger capacitance values increase the RC time constant, it slows the capacitor's charge and discharge rates. Since the 555 timer's trigger thresholds (1/3Vcc and 2/3Vcc) are fixed, a larger capacitor takes significantly longer to reach these voltages. This excessive filtering would make the LED's brightness changes feel sluggish and less precise when adjusting the potentiometer. <br/>
 <img width="300" height="721" alt="image" src="https://github.com/user-attachments/assets/dc8b1b64-4159-4cfa-a0ee-1fc3b8950063" /> Figure 1 annotated <br/>
 Now, one may wonder whether a 1uF capacitor could be used, and in this case it definitely could. However, the potentiometer values would require adjusting, as a 1uF capacitor would be much too sensitive. 
 
@@ -15,21 +15,19 @@ Likewise, with some potentiometer values there are cases that result in the LED 
 # Theory and decisions behind pinout placements
 <img width="600" height="279" alt="image" src="https://github.com/user-attachments/assets/9b49348d-215b-4eff-a162-9608d2c26ac6" /> [4] NE555 Timer Pinout Diagram <br/>
 
-As shown in the picture above, we have trigger (pin 2) and threshold (pin 6) connected to each other directly with a GREEN wire. No resistor is needed since we do not want voltage drop to affect the 2/3Vcc and 1/3Vcc for each comparator in the 555 timer. Next, we have reset (pin 4) and Vcc (pin 8) connected, this is so that the timer can constantly operate without any random resets occuring. 
+As shown in the picture above, we have trigger (pin 2) and threshold (pin 6) connected to each other directly with a GREEN wire. No resistor is needed since we do not want voltage drop to affect the 2/3Vcc and 1/3Vcc for each comparator in the 555 timer. [2] Next, we have reset (pin 4) and Vcc (pin 8) connected, this is so that the timer can constantly operate without any random resets occuring. 
 
-For discharge (pin 7) and Vcc (pin 8) being connected through resistors, this is so that discharge can occur when the base is given enough voltage in the BJT. As such the resistors used here prevent component damage from overheating, and the potentiometer allows for the duty cycle and frequency to be altered. (As shown in the 555 timer image). <br/>
+For discharge (pin 7) and Vcc (pin 8) being connected through a resistor, this is so that discharge can occur when the base of the BJT is given enough voltage. As such the resistors used here prevent component damage from overheating, and the potentiometer allows for the duty cycle to be altered. [2] <br/>
  
 <img width="727" height="400" alt="image" src="https://github.com/user-attachments/assets/a9f3fd03-95f2-4187-9d05-816f2ea36fed" /> [2] Exterior Configuration for Astable <br/>
 <img width="800" height="445" alt="image" src="https://github.com/user-attachments/assets/c75aa674-0e2f-431d-9106-f576fbede37c" /> [4] NE555 interior BJT orientation <br/>
 
+By connecting threshold (pin 6) and trigger (pin 2) together to a polarity capacitor, while connecting the discharge pin (pin 7) to this node through a resistor, the 555 timer operates in its astable configuration. In this setup, the capacitor voltage repeatedly charges and discharges between 1/3VCC and 2/3VCC. When the capacitor voltage crosses these comparator thresholds, the internal comparators toggle the SR flip-flop, which in turn controls the discharge BJT at pin 7.
 
-As for the connection between threshold (pint 6) and discharge (pin 7), this allows for primarily changing the period (duty cycle changes a bit too but its very small in comparison to period change). This is because threshold is a comparator input, so when we have it connected to discharge, threshold input goes through the flip-flop and then triggers the base of the BJT once there's enough voltage, and this allows for the direct relationship between input and discharge, hence determining the period.
-The connection of the two allows for the general case shown in the I/O table image, giving the general pulse width on and off functionality for the 555 timer. This is shown in the circuit below as such.
+This switching action causes continuous oscillation, producing a periodic output waveform at pin 3. The charge and discharge times of the capacitor determine both the oscillation period and duty cycle, resulting in the characteristic on/off pulsing behavior shown in the 555 timer operational diagram and the circuit below.
 
-<img width="782" height="366" alt="image" src="https://github.com/user-attachments/assets/67f311a8-c2c1-4d6f-85b7-d8ed320b2da3" /> [A] <br/>
-
-
-<img width="798" height="422" alt="image" src="https://github.com/user-attachments/assets/1d012e24-c07c-49d2-bd87-19c463be594d" /> [4] <br/>
+<img width="782" height="366" alt="image" src="https://github.com/user-attachments/assets/67f311a8-c2c1-4d6f-85b7-d8ed320b2da3" /> [A] Formula to calculate duty cycle and period. <br/>
+<img width="798" height="422" alt="image" src="https://github.com/user-attachments/assets/1d012e24-c07c-49d2-bd87-19c463be594d" /> [4] Flip flop table for quick referencing during testing. <br/>
 
 # Second Circuit Implementation
 <img src="https://github.com/user-attachments/assets/c97514b8-139f-48ea-9cce-27dd3798662c" width="500" /><br/>
