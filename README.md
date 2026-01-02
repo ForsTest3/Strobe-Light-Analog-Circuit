@@ -1,9 +1,9 @@
-## Strobe-Light-Analog-Circuit
+# Strobe-Light-Analog-Circuit
 Analog circuit using a NE555 IC in astable configuration to flicker LEDs at customizable rates with potentiometers. The entire circuit is powered by a 9V alkaline battery. (Work in progress). <br/>
 
 <img width="300" height="721" alt="image" src="https://github.com/user-attachments/assets/57a52e68-895c-40d6-9b2c-bdc6c7f6e26d" /> Figure 1 <br/>
 
-# Strobe Brightness Adjuster (first circuit implementation
+## Strobe Brightness Adjuster (first circuit implementation
 This is the first circuit implementation. The 900k ohm potentiometer allows for the brightness of the LED to be adjusted. It is made in such a way that when it is turned close to either end, the brightness is close to maximum, and when the potentiometer is turned close to center, the LED dims down. However, we want to modify this so that ideally it will only be bright on ONE side. To implement this in further circuits, we can try using a diode.
 
 A 10µF capacitor was selected over a 100µF alternative to allow responsive LED brightness control. As larger capacitance values increase the RC time constant, it slowis the capacitor's charge and discharge rates. Since the 555 timer's trigger thresholds (1/3Vcc and 2/3Vcc) are fixed, a larger capacitor takes significantly longer to reach these voltages. This excessive filtering would make the LED's brightness changes feel sluggish and less precise when adjusting the potentiometer.<br/>
