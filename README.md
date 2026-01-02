@@ -21,6 +21,7 @@ For discharge (pin 7) and Vcc (pin 8) being connected through a resistor, this i
  
 <img width="727" height="400" alt="image" src="https://github.com/user-attachments/assets/a9f3fd03-95f2-4187-9d05-816f2ea36fed" /> [2] <br/> 
 Exterior Configuration for Astable <br/>
+
 <img width="800" height="445" alt="image" src="https://github.com/user-attachments/assets/c75aa674-0e2f-431d-9106-f576fbede37c" /> [4] NE555 interior BJT orientation <br/>
 
 By connecting threshold (pin 6) and trigger (pin 2) together to a polarity capacitor, while connecting the discharge pin (pin 7) to this node through a resistor, the 555 timer operates in its astable configuration. In this setup, the capacitor voltage repeatedly charges and discharges between 1/3VCC and 2/3VCC. When the capacitor voltage crosses these comparator thresholds, the internal comparators toggle the SR flip-flop, which in turn controls the discharge BJT at pin 7.
