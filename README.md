@@ -2,7 +2,7 @@
 Analog circuit using a NE555 IC in astable configuration to flicker LEDs at customizable rates with potentiometers. The entire circuit is powered by a 9V alkaline battery. (Work in progress). <br/>
 
 ## Strobe Brightness Adjuster (First circuit implementation)
-<img width="800" height="465" alt="image" src="https://github.com/user-attachments/assets/ce00b21c-7ea1-4a67-a7bf-059588d7c125" /> Schematic 1 <br/>
+<img width="700" height="555" alt="Screenshot 2026-01-18 220940" src="https://github.com/user-attachments/assets/7d30e985-523d-4e22-9265-92d84b0393f7" /> Schematic 1, 700 x 555 <br/>
 <img width="300" height="721" alt="image" src="https://github.com/user-attachments/assets/57a52e68-895c-40d6-9b2c-bdc6c7f6e26d" /> Figure 1 <br/>
 
 ## Choice implementations
