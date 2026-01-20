@@ -34,7 +34,8 @@ This switching action causes continuous oscillation, producing a periodic output
 <img width="798" height="422" alt="image" src="https://github.com/user-attachments/assets/1d012e24-c07c-49d2-bd87-19c463be594d" /> [4] Flip flop table for quick referencing during testing. <br/>
 
 # Second Circuit Implementation
-<img src="https://github.com/user-attachments/assets/c97514b8-139f-48ea-9cce-27dd3798662c" width="500" /><br/>
+<img width="800" height="581" alt="image" src="https://github.com/user-attachments/assets/cbaf2b85-0d0a-4249-bbed-a44e31d551b5" /> Schematic 2, from StrobeLightAnalogCircuit3Potents. <br/>
+<img src="https://github.com/user-attachments/assets/c97514b8-139f-48ea-9cce-27dd3798662c" width="500" /> Figure 2 <br/>
 
 Two additional potentiometers are added: a second 900k ohm and a 100k ohm. The second 900k ohm potentiometer independently adjusts the pulse width (the ON and OFF times within each cycle), while the 100k ohm potentiometer sets the overall period (the total time of one full cycle). In future revisions, these potentiometers will be standardized to the same resistance value unless a specific design requirement dictates otherwise.
 
