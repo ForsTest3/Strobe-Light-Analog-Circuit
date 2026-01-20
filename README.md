@@ -10,9 +10,10 @@ This first implementation allows the potentiometer to adjust the brightness of t
 
 A 10µF capacitor was selected over a 100µF alternative to allow responsive LED brightness control. As larger capacitance values increase the RC time constant, it slows the capacitor's charge and discharge rates. Since the 555 timer's trigger thresholds (1/3Vcc and 2/3Vcc) are fixed, a larger capacitor takes significantly longer to reach these voltages. This excessive filtering would make the LED's brightness changes feel sluggish and less precise when adjusting the potentiometer. <br/>
 <img width="300" height="721" alt="image" src="https://github.com/user-attachments/assets/dc8b1b64-4159-4cfa-a0ee-1fc3b8950063" /> Figure 1 annotated <br/>
-Now, one may wonder whether a 1uF capacitor could be used, and in this case it definitely could. However, the potentiometer values would require adjusting, as a 1uF capacitor would be much too sensitive. 
 
-Likewise, with some potentiometer values there are cases that result in the LED not lighting up while trying to obtain a very high frequency of blinking.
+Now, one may wonder whether a 1uF capacitor could be used, and in this case it definitely could. However, the potentiometer values would require adjusting, as a 1uF capacitor would result in extremely sensitive adjustments to the LED behavior. Also, an electrolytic capacitor was chosen over ceramic because we require energy storage, rather than noise filtering. 
+
+Note that the circuit design should account for the voltage decay of a standard 9V alkaline battery over its operational life. As its output declines (e.g., to 6V or lower), the performance of passive components may require recalibration to maintain optimal circuit function. (This is in the case that there is no constant voltage generator.) 
 
 # Theory and decisions behind pinout placements
 <img width="600" height="279" alt="image" src="https://github.com/user-attachments/assets/9b49348d-215b-4eff-a162-9608d2c26ac6" /> [4] NE555 Timer Pinout <br/>
