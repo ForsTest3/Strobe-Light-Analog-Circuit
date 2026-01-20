@@ -6,7 +6,7 @@ Analog circuit using a NE555 IC in astable configuration to flicker LEDs at cust
 <img width="300" height="721" alt="image" src="https://github.com/user-attachments/assets/57a52e68-895c-40d6-9b2c-bdc6c7f6e26d" /> Figure 1 <br/>
 
 ## Choice implementations
-The 900 kΩ potentiometer currently adjusts the LED brightness so that it approaches maximum at both ends of the rotation and dims near the center. To modify this behavior so that brightness is high on only one side of the potentiometer range, we can introduce a diode into the circuit to block current in one direction and create the desired asymmetric response.
+The 900 kΩ potentiometer currently adjusts the LED brightness so that it approaches maximum at both ends of the rotation and dims near the center. To modify this behavior so that brightness is high on only one side of the potentiometer range, we can simply remove the other pin on the other side of the potentiometer.
 
 A 10µF capacitor was selected over a 100µF alternative to allow responsive LED brightness control. As larger capacitance values increase the RC time constant, it slows the capacitor's charge and discharge rates. Since the 555 timer's trigger thresholds (1/3Vcc and 2/3Vcc) are fixed, a larger capacitor takes significantly longer to reach these voltages. This excessive filtering would make the LED's brightness changes feel sluggish and less precise when adjusting the potentiometer. <br/>
 <img width="300" height="721" alt="image" src="https://github.com/user-attachments/assets/dc8b1b64-4159-4cfa-a0ee-1fc3b8950063" /> Figure 1 annotated <br/>
