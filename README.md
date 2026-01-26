@@ -59,6 +59,8 @@ To verify correctly, we also test with matching LEDs for each respective port. T
 <img width="500" height="856" alt="image" src="https://github.com/user-attachments/assets/96c2ec1c-a54b-4fc8-9876-22c223f607d7" /><br/>
 Here we obtain a circuit that allows for both LEDs to be modified in brightness, while also having alternating blinking patterns. However, the top potentiometer can dim the top red LED but only a bit, while the bottom potentiometer can dim both of the LEDs, dimming the top LED first and then the bottom LED. This is mainly due to more current entering the BJT emitter, so that it can come out the collector when the base takes enough input. As a result, the bottom LED stays powered on longer than the top LED despite it requiring current into the base from the output of the 555 timer.
 
+If we want to implement amplification using a BJT for example, we can do common emitter. 
+
 # References
 [1] Image theory https://www.youtube.com/watch?v=iwbGccGU4io <br/>
 [2] https://www.youtube.com/watch?v=APghHcA-MOI <br/>
